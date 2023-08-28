@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Robotics</title>
+
+   <style>
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1140px;  
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header{
+    width:100%;
+    color: white;
+    padding: 20px;
+    background: #151c39e8;
+	box-sizing: border-box;
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-link{
+    color: white;
+    text-decoration: none;
+}
+
+/* Дополнительно */
+
+.menu-link{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* BANNER */
+
+.banner-section{
+    padding: 100px 0;
+    background: url(banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-title{
+    font-size: 48px;
+}
+.banner-title, .banner-description{
+    text-align: center;
+    color: white;
+}
+
+/* CARDS */
+
+.cards-section{
+    padding: 50px 0px;
+}
+
+.cards-title, .cards-description{
+    color: #151c39;
+    text-align: center;
+}
+
+.card{
+    padding: 25px;
+    margin-top: 25px;
+    width: 25%;
+    background: white;
+    box-shadow: 0px 2px 7px 0px #9e90ff;
+    text-align: center;
+}
+.card:hover{
+    padding: 25px;
+    margin-top: 25px;
+    width: 25%;
+    background: white;
+    box-shadow: 0px 8px 28px 0px #9e90ff;
+    text-align: center;
+}
+
+.card-link{
+    text-decoration: none;
+    color: white;
+}
+
+.card-button{
+    text-align: center;
+    background: #151c39;
+    padding: 10px 70px;
+    border-radius: 10px;
+}
+
+
+.card-title, .card-text{
+    margin-bottom: 10px;
+}
+
+/* Дополнительно */
+
+.card-button{
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer{
+    background: url(footer-bg.jpg);
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.copyright{
+    color: white;
+}
+
+
+
+/* HEADER */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;   /* Включение flexbox */
+    flex-direction: row; /* направление расположения блоков относительно oX слева направо */
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo-img {
+    margin-right: 40px;
+}
+
+.header-menu {
+    flex-grow: 3;
+}
+
+/* CARDS */
+
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-logo {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.footer-search {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.footer-search-input {
+    height: 40px;
+    flex-grow: 3;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer-search-button {
+    height: 40px;
+    flex-grow: 2;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+   </style>
+</head>
+<body>
+
+    <header class = 'header'>
+
+
+        <div class = 'container'>
+            <div class = 'header-row'>
+                <!--START BLOCK LOGO-->
+                <div class = 'header-logo'>
+                    <img class = 'logo-img' src='logo.png'></img>
+                    <h1 class = 'logo-title'>Robotics</h1>
+                </div>
+                
+                <div class = 'header-menu'>
+                    <ul class = 'menu'>
+                        <li class = 'menu-item'>
+                            <a class = 'menu-link' href ='#'>Home</a>
+                        </li>
+                        <li class = 'menu-item'>
+                            <a class = 'menu-link' href ='#'>About</a>
+                        </li>
+                        <li class = 'menu-item'>
+                            <a class = 'menu-link' href ='#metka'>Products</a>
+                        </li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+
+    </header>
+    
+
+
+    <main class = 'main'>
+      
+        <section class = 'banner-section'>
+            <div class = 'container'>  
+                <div class = 'banner-text'>
+                    <h1 class = 'banner-title'>Products</h1>
+                    <div class = 'banner-description'> 
+                        <a href = '#' class = 'menu-link'>Home</a> &#x2192 <a href = '#' class = 'menu-link'>Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section class = 'cards-section'>
+            <a name = 'metka'>
+            <div class = 'container'>
+                    <a name = 'metka'></a>
+                <div class = 'cards-text'>
+                    <h1 class = 'cards-title'>Featured Robotics Products to Show</h1>
+                    <div class = 'cards-description'>Who are in extremely love width eco friendly system.</div>
+                </div>
+
+                <div class = 'cards'>
+                    <div class = 'cards-row'>
+                        <div class = 'card'>
+
+                            <img class = 'card-img' src="p1.png">
+                            <div class = 'card-body'>
+                                <h3 class = 'card-title'>The Upper Eye</h3>
+                                <div class = 'card-text'>Who are in extremely love with eco friendly system</div>
+                                <div class = 'card-button'>
+                                    <a class = 'card-link' href = '#'>View Details</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class = 'card'>
+
+                            <img class = 'card-img' src="p1.png">
+                            <div class = 'card-body'>
+                                <h3 class = 'card-title'>The Upper Eye</h3>
+                                <div class = 'card-text'>Who are in extremely love with eco friendly system</div>
+                                <div class = 'card-button'>
+                                    <a class = 'card-link' href = '#'>View Details</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class = 'card'>
+
+                            <img class = 'card-img' src="p1.png">
+                            <div class = 'card-body'>
+                                <h3 class = 'card-title'>The Upper Eye</h3>
+                                <div class = 'card-text'>Who are in extremely love with eco friendly system</div>
+                                <div class = 'card-button'>
+                                    <a class = 'card-link' href = '#'>View Details</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+      
+    </main>
+ 
+    <footer class = 'footer'>
+        <div class = 'container'>
+            <div class = 'footer-row'>
+                <div class = 'copyright'>Copyright 2019 ALL right reserved By....</div>
+
+                <div class="footer-search">
+                    <input type="text" class="footer-search-input">
+                    <button class="footer-search-button">Отправить</button>
+                </div>
+                    
+                <div class="social-networks">
+                    <a href="#"><img class="footer-logo" src="vk.png"></a>
+                    <a href="#"><img class="footer-logo" src="youtube.png"></a>
+                    <a href="#"><img class="footer-logo" src="facebook.png"></a>
+                    <a href="#"><img class="footer-logo" src="instagram.png"></a>
+                </div>
+               
+                
+            </div>
+        </div>
+    </footer>
+   
+
+</body>
+</html>
